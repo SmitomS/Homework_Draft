@@ -118,7 +118,7 @@ The resuspension term in equations (\ref{eqn:WaterMassbalance}) and (\ref{eqn:Se
     Resuspension = k_r.A_{si}.\theta_r^{(T-20)}
     \label{eqn:ZeroOrderModel}
 \end{equation}
-where $k_r$ is the phosphorus release flux from the sediments to the water compartment $[kg/m2/month]$, $A_{si}$ is the sediment area $[m^2]$ of segment i and $\theta_r$ is the temperature adjustment factor. 
+where $k_r$ is the phosphorus release flux from the sediments to the water compartment $[kg/m^2/month]$, $A_{si}$ is the sediment area $[m^2]$ of segment i and $\theta_r$ is the temperature adjustment factor. 
 
 \textbf{First-order sub-model}: In this sub-model, the sediment phosphorus release flux was assumed to follow first-order rate kinetics: the resuspension of phosphorus from the sediments is dependent on the mass of sediment phosphorus at any given instant of time. Like the previous sub-model, the temperature-dependent nature of the resuspension was retained in this sub-model too. The first-order P release sub-model can be written as:
 \begin{equation}
@@ -129,6 +129,7 @@ where $R_s$ is the recycling rate of sediment phosphorus $[1/month]$.\\
 \textbf{Hypoxic sub-model}: The hypoxic sub-model is similar to the first-order P release sub-model which an exception that sediment phosphorus was assumed to be released only when hypoxic conditions appear to exist over the sediment-water interface (SWI). For this study, the hypoxia is assumed to prevail in the overlying water when dissolved oxygen level falls below 3 mg/L. It was also assumed that the recorded dissolved oxygen concentration at the maximum depth was an adequate representation of the dissolved oxygen conditions near the (SWI).  
 \subsubsection{Model calibration}
 The model parameters were calibrated in a Bayesian framework, using an adaptive Markov Chain Monte-Carlo approach. The ‘adaptMCMC’ package in R was used for this purpose (Scheidegger, 2018)
+
 \newpage
 % References
 \printbibliography
